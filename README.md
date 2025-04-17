@@ -46,14 +46,14 @@ Install dlt python package
 ### Service Account
 
 ### How the GCS BUcket looks like
-![GCS Bucket](gcs1.png)
-![GCS Bucket - Inside](gcs2.png)
+![GCS Bucket](Project/gcs1.png)
+![GCS Bucket - Inside](Project/gcs2.png)
 ### Bigquery
-![Bigquery](bigquery.png)
+![Bigquery](Project/bigquery.png)
 ### Kestra
 Kestra clones the same Project folder of this git repor first and saves those files to the Namespace. Then, it runs the python file called binance_flow.py which runs a dlt pipeline to store the json data file to the GCS bucket. This flow is triggered every 10 minutes and creates a new file in this bucket.
-![Kestra](kestra_flows.png)
-![alt text](binance_flow_topology.png)
+![Kestra](Project/kestra_flows.png)
+![alt text](Project/binance_flow_topology.png)
 ### DBT
 DBT is used to create an external table from all the created files. Then, it also creates the structured data tables.
 Dbt_external_tables package is installed. Check [here](https://hub.getdbt.com/dbt-labs/dbt_external_tables/latest/) for more info. 
@@ -61,6 +61,6 @@ Dbt_external_tables package is installed. Check [here](https://hub.getdbt.com/db
 ### Looker Studi Report
 [Public link](https://lookerstudio.google.com/u/1/reporting/4ac6e277-4d78-4f83-9940-6e87ae368f81/page/q8NHF)
 It gets updated every 10 min (as long as I have credits in GCP)
-![Report](report.png)
+![Report](Project/report.png)
 
 Let me know if you have any questions or instructions are inadequate. Koray Kanut on the Slack group
