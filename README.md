@@ -1,6 +1,4 @@
-de_zoomcamp_2024_UCL_2016-2022
-
-# The final project for DE Zoomcamp 2024
+# The final project for DE Zoomcamp 2025
 
 ## Problem description:
 While there is an abundance of data on Bitcoin prices available online, detailed representations of this data are less common. In this project, I used the Binance API – specifically the Market Data Endpoint – to retrieve in-depth information on the volume and number of trades between Bitcoin and USDT. This approach provides a more nuanced understanding of market behavior.
