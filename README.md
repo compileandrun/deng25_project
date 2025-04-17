@@ -25,7 +25,7 @@ Google BigQuery - to build the data tables/views for reporting
 Dbt cloud - to transform the data
 Looker Data Studio - reporting
 
-![Architecture](Project/architecture.png)
+<img src="Project/architecture.png" alt="Architecture" width="700"/>
 
 To copy the git repo:
 
@@ -43,17 +43,19 @@ Install dlt python package
 
 ```pip install dlt```
 
-### Service Account
-
 ### How the GCS BUcket looks like
-![GCS Bucket](Project/gcs1.png)
-![GCS Bucket - Inside](Project/gcs2.png)
+<img src="Project/gcs1.png" alt="gcs1" width="700"/>
+
+<img src="Project/gcs2.png" alt="gcs2" width="700"/>
+
 ### Bigquery
-![Bigquery](Project/bigquery.png)
+<img src="Project/bigquery.png" alt="bigquery" width="700"/>
+
 ### Kestra
 Kestra clones the same Project folder of this git repor first and saves those files to the Namespace. Then, it runs the python file called binance_flow.py which runs a dlt pipeline to store the json data file to the GCS bucket. This flow is triggered every 10 minutes and creates a new file in this bucket.
-![Kestra](Project/kestra_flows.png)
-![alt text](Project/binance_flow_topology.png)
+<img src="Project/kestra_flows.png" alt="kestra_flows" width="700"/>
+<img src="Project/binance_flow_topology.png" alt="binance_flow_topology" width="700"/>
+
 ### DBT
 DBT is used to create an external table from all the created files. Then, it also creates the structured data tables.
 Dbt_external_tables package is installed. Check [here](https://hub.getdbt.com/dbt-labs/dbt_external_tables/latest/) for more info. 
@@ -61,6 +63,6 @@ Dbt_external_tables package is installed. Check [here](https://hub.getdbt.com/db
 ### Looker Studi Report
 [Public link](https://lookerstudio.google.com/u/1/reporting/4ac6e277-4d78-4f83-9940-6e87ae368f81/page/q8NHF)
 It gets updated every 10 min (as long as I have credits in GCP)
-![Report](Project/report.png)
+<img src="Project/report.png" alt="report" width="700"/>
 
 Let me know if you have any questions or instructions are inadequate. Koray Kanut on the Slack group
