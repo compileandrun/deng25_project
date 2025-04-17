@@ -53,8 +53,9 @@ Install dlt python package
 
 ### Kestra
 Kestra clones the same Project folder of this git repor first and saves those files to the Namespace. Then, it runs the python file called binance_flow.py which runs a dlt pipeline to store the json data file to the GCS bucket. This flow is triggered every 10 minutes and creates a new file in this bucket.
-<img src="Project/kestra_flows.png" alt="kestra_flows" width="700"/>
-<img src="Project/binance_flow_topology.png" alt="binance_flow_topology" width="700"/>
+<img src="Project/kestra_flows.png" alt="kestra_flows" width="500"/>
+
+<img src="Project/binance_flow_topology.png" alt="binance_flow_topology" width="200"/>
 
 ### DBT
 DBT is used to create an external table from all the created files. Then, it also creates the structured data tables.
