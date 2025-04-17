@@ -27,9 +27,7 @@ Looker Data Studio - reporting
 
 To copy the git repo:
 
-```git clone https://github.com/compileandrun/deng25.git```
-
-Then go to the Project folder.
+```git clone https://github.com/compileandrun/deng25_project```
 
 Follow the 1.5.1 video from Data Engineering Zoomcamp [Youtube video](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=14&ab_channel=DataTalksClub%E2%AC%9B).
 
