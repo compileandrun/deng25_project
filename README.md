@@ -25,7 +25,7 @@ Google BigQuery - to build the data tables/views for reporting
 Dbt cloud - to transform the data
 Looker Data Studio - reporting
 
-![Architecture](architecture.png)
+![Architecture](Project/architecture.png)
 
 To copy the git repo:
 
