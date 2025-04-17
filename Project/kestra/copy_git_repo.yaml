@@ -1,0 +1,31 @@
+id: copy_git_repo
+namespace: company.team
+
+
+tasks:
+    #this io.kestra.plugin.core.log.Log just logs the value.
+  - id: git_token
+    type: io.kestra.plugin.core.log.Log
+    message: "{{ kv('GITHUB_ACCESS_TOKEN') }}"
+  - id: project_id
+    type: io.kestra.plugin.core.log.Log
+    message: "{{ kv('project_id') }}"
+  - id: private_key
+    type: io.kestra.plugin.core.log.Log
+    message: "{{ kv('private_key') }}"
+  - id: client_email
+    type: io.kestra.plugin.core.log.Log
+    message: "{{ kv('client_email') }}"
+  - id: bucket_url
+    type: io.kestra.plugin.core.log.Log
+    message: "{{ kv('BUCKET_URL') }}"
+
+  - id: get_files_from_git
+    type: io.kestra.plugin.git.SyncNamespaceFiles
+    #username: compileandrun #dont need these as I have Github access token as a KV in this namespace. Somehow this is a built-in function in Kestra.
+    #password: git_token
+    url: "https://github.com/compileandrun/deng25/"
+    #branch: main
+    #namespace: git
+    gitDirectory: Project/dlt
+    dryRun: false

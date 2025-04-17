@@ -1,0 +1,16 @@
+# ignore secrets, virtual environments and typical python compilation artifacts
+secrets.toml
+# ignore basic python artifacts
+.env
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+# ignore duckdb
+*.duckdb
+*.wal
+# Default .gitignore content added by dbt Cloud# you shouldn't commit these into source control
+# these are the default directory names, adjust/add to fit your needs
+target/
+dbt_packages/
+logs/
+# end dbt Cloud content

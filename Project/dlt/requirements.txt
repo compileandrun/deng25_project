@@ -1,0 +1,7 @@
+dlt[duckdb]>=1.8.1
+dlt[gs]
+dlt==1.9.0
+pandas==2.2.3
+numpy
+typing
+datetime==5.5
