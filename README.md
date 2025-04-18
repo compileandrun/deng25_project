@@ -48,7 +48,12 @@ Install dlt python package
 <img src="Project/bigquery.png" alt="bigquery" width="700"/>
 
 ### Kestra
-Kestra clones the same Project folder of this git repor first and saves those files to the Namespace. Then, it runs the python file called binance_flow.py which runs a dlt pipeline to store the json data file to the GCS bucket. This flow is triggered every 10 minutes and creates a new file in this bucket.
+Kestra clones the same Project folder of this git repo first and saves those files to the Namespace. Then, it runs the python file called binance_flow.py which runs a dlt pipeline to store the json data file to the GCS bucket. This flow is triggered every 10 minutes and creates a new file in this bucket.
+I also added some KV pairs to the same namespace:
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/d17d35fe-bece-47b0-90f1-2dd5fcc54b35" />
+
+
 <img src="Project/kestra_flows.png" alt="kestra_flows" width="500"/>
 
 <img src="Project/binance_flow_topology.png" alt="binance_flow_topology" width="200"/>
